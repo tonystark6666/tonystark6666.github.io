@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Lato|Montserrat|Playfair+Display|Raleway&display=swap');
+
+
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.parallax{
+    background:rgb(0,0,0,0.3);
+    height: 650px;
+}
+.parallaxheader{
+    background:rgb(0,0,0,0.3);
+    height: 300px;
+}
+.title{
+    margin:0px;
+    padding: 300px 0px 0px 0px;
+    text-align: center;
+    color: #fff;
+    font-family: Playfair Display;
+    font-size: 70px;
+    font-weight: bold;
+}
+.subtitle{
+    margin:0px;
+    padding: 0px;
+    text-align: center;
+    color: #fff;
+    font-family: Raleway;
+    font-size: 20px;
+    max-width:100%;
+}
+.titleheader{
+    margin:0px;
+    padding: 150px 0px 0px 0px;
+    text-align: center;
+    color: #ff511b;
+    font-family: Playfair Display;
+    font-size: 70px;
+    font-weight: bold;
+}
+.subtitleheader{
+    margin:0px;
+    padding: 0px;
+    text-align: center;
+    color: #ff511b;
+    font-family: Raleway;
+    font-size: 20px;
+    max-width:100%;
+}
+.heading{
+    margin:0px;
+    padding: 30px 60px;
+    color: #ff511b;
+    font-family: Merriweather;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+.about{
+    background-color: white;
+    padding: 50px 100px;
+}
+h2 {
+    color:#ff511b;
+    text-align: center;
+    font-family: Merriweather;
+    margin: 70px 100px 0px;
+    display: block;
+}
+p{
+    padding: 0px 100px 50px;
+    font-family: Montserrat;
+    color:#0e0d76;
+    text-align: center;
+}
+h4{
+    padding: 30px 100px 0px 100px;
+    font-family: Merriweather;
+    color:#7c7bcb;
+    text-align: center;
+}
+.services{
+    padding: 10px;
+}
+.services2{
+    text-align: right;
+    
+}
+.services4 {
+    text-align: right;
+    display: block;
+    width: 70%;
+    float: right;
+}
+.servicesp{
+    float: right;
+}
+.profile {
+    height: 250px;
+    display: block;
+    margin: auto;
+    border-radius: 100%;
+}
+.servicesimg {
+    height=100px;
+    margin=100px;
+    padding=100px;
+}
+.btn{
+    font-family: Lato;
+    padding: 10px;
+    color:white;
+    background-color: #ff511b;
+    border-width: 0px;
+    border-radius: 3px;
+    margin: 0px;
+    text-align: center;
+    width:100%;
+    border: transparent solid;
+}
+.btn:focus, .btn:hover,.btn.active {
+    color:#ff511b;
+    background-color: white;
+    border:#ff511b solid;
+}
+.btn-container{
+    max-width: 100%;
+    position:relative;
+    padding: 0px 40%;
+}
+.center{
+    position: absolute;
+    max-width:100%;
+    left:50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.navbar {
+    margin-bottom: 0;
+    background-color: #f4511e;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+}
+.navbar-default .navbar-toggle,.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+    border-color: transparent;
+    padding:0;
+    margin:5;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+    .about {
+        width: 100%;
+        margin:0px;
+        padding:10px;
+    }
+    .btn{
+        min-width: 100px;
+    }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+    .about, p,h4 {
+        width: 100%;
+        margin:0px;
+        padding:10px;
+    }
+    .btn{
+        min-width: 100px;
+    }
+    .item h4{
+        min-width: 100%;
+        padding: 10px 20%;
+        margin: 0px 0 0px 0;
+    }
+}
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0px 0 70px 0;
+    font-family: Montserrat;
+    color:#0e0d76;
+  }
+  .item span {
+    font-style: normal;
+  }
+input {
+  border: 2px solid gray;
+  border-radius: 4px;
+    padding: 10px;
+    font-family: Lato;
+}
+input:focus {
+    border: 2px solid #146cfa;
+    
+}
+input[type=submit]{
+    background-color: #ff511b;
+    border-color: #ff511b;
+    color:white;
+}
+input[type=submit]:hover{
+    color: #ff511b;
+    border-color: #ff511b;
+    background-color:white;
+}
+form {
+    text-align: center;
+}
