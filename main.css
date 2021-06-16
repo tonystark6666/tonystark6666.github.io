@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Lato|Montserrat|Playfair+Display|Raleway&display=swap');
 
-
+html {
+    scroll-behavior: smooth;
+}
 .logo {
     display: inline-block;
     vertical-align: top;
@@ -72,7 +74,7 @@ h2 {
     color:#663333;
     text-align: center;
     font-family: Merriweather;
-    margin: 70px 100px 0px;
+    margin: 5vw 10vw 0;
     display: block;
 }
 p{
@@ -87,25 +89,35 @@ h4{
     color:#647973;
     text-align: center;
 }
-.services{
-    padding: 50px;
+div.services{
+    float: left;
+    width:100%;
+    padding: 5vw 20vw;
     background-color: #f7f7f7;
 }
-.services2{
-    text-align: right;
-    margin-right: 50px;
+div.servicesimg {
+    float: left;
+    margin: 5vw 0;
 }
-.services4 {
+h2.services{
     text-align: right;
-    display: block;
-    width: 70%;
-    float: right;
-    margin-right: -50px;
+    margin-right: 0;
 }
-.servicesp{
-    display: block;
+h4.services {
+    text-align: right;
+    width: 64%;
     float: right;
-    margin-right: -50px;
+    padding-right: 0;
+}
+p.services{
+    text-align: right;
+    width: 64%;
+    float: right;
+    padding-right: 0;
+}
+img.services {
+    height: 20vw;
+    max-height: 200px;
 }
 .profile {
     height: 250px;
@@ -178,6 +190,32 @@ h4{
     .btn{
         min-width: 100px;
     }
+    div.serviceswords, div.servicesimg {
+        float: none;
+    }
+    h2.services {
+        text-align: center;
+        float: none;
+        display: block;
+        margin: 20px auto;
+    }
+    h4.services {
+        text-align: center;
+        float: none;
+        width: 100%;
+        padding: 10px;
+    }
+    p.services {
+        text-align: center;
+        display: block;
+        margin: auto;
+        padding: 10px;
+        float: none;
+    }
+    img.services {
+        display: block;
+        margin: auto;
+    }
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
@@ -194,6 +232,11 @@ h4{
         padding: 10px 20%;
         margin: 0px 0 0px 0;
     }
+    
+}
+.carousel {
+    float: left;
+    width: 100%;
 }
   .carousel-control.right, .carousel-control.left {
     background-image: none;
