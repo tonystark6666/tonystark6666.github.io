@@ -10,7 +10,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script src="main.js"></script>
     </head>
-    <body>
+    <body onload='slideIn("top")'>
         <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -33,10 +33,13 @@
 
         
         <div class="parallax" data-parallax="scroll" data-image-src="images/orangeroses.jpg" id="home">
+            <div id="top">
             <h1 class="title">Dora Zhou</h1>
             <h4 class="subtitle">This is a Subtitle</h4>
+                </div>
         </div>
         <div class="about" id="about">
+            <div id="aboutslide">
             <h4 class="heading">Hi! I am  Dora!</h4>
             <img src="images/Profile%20Pic.jpg" class="profile">
             <h4>I am a high school student at River Hill who is passionate about computer science :)</h4><br>
@@ -50,8 +53,10 @@
                 <button type="button" class="btn btn-primary">Get Started!</button>
                 </div>
             </div>
+            </div>
         </div>
         <div class="services" id="services" overflow="auto">
+            <div id="servicesslide">
             <div class="servicesimg">
             <img src="images/servicesicon.png" class="services">
                 </div>
@@ -60,6 +65,7 @@
 
             <h4 class="services">I do not provide any services lmao. This text is filler text to fill up space and its purpose is to take up more space.</h4>
             <p class="services">Here are some more details</p>
+                </div>
                 </div>
         </div>
         <div class="numbers">
