@@ -60,11 +60,11 @@ h4{
 /*Home*/
 .parallax{
     background:rgb(0,0,0,0.3);
-    height: 650px;
+    height: 100vh;
 }
 .parallaxheader{
     background:rgb(0,0,0,0.3);
-    height: 300px;
+    height: 50vh;
 }
 .title{
     margin:0px;
