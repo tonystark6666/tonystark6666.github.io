@@ -232,7 +232,122 @@ div.num, div.label{
   .item span {
     font-style: normal;
   }
+/*Footer*/
+div.footer {
+    float: left;
+    padding: 10vh 10vw 0;
+    background-color: #CC6666;
+    width: 100%;
+    color: #fff;
+}
+div.columns {
+    float: left;
+}
+.col1 {
+    width: 20%;
+    float: left;
+    padding: 0 10px;
+}
+img.footerlogo {
+    max-width: 200px;
+    width: 100%
+}
+.col2 {
+    width: 20%;
+    float: inherit;
+}
+h5.title {
+    font: 15px Raleway;
+    padding: 1vh 5vw 15px;
+    text-align: left;
+    color: #CCAAA6;
+}
+a.footer {
+    font: 15px Raleway;
+    padding: 0 5vw;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+}
+a.footer:hover {
+    font: 15px Raleway;
+    padding: 0 5vw;
+    text-align: left;
+    color: #663333;
+}
+.icons {
+    margin: 0 0 0 5vw;
+}
+#icon {
+    color: #fff;
+    text-decoration: none;
+    font-size: 3vh;
+    padding: 1vh 1.5vw 1vh 0;
+}
+#icon:hover, #icon:active {
+    color:#663333;
+}
+.col3 {
+    float: left;
+    width: 30vw;
+}
+p.footer {
+    font: 15px Raleway;
+    padding: 0 0 0 5vw;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+input.email {
+    font: 15px Raleway;
+    margin: 0 5vw;
+    text-align: left;
+    background-color: transparent;
+    border: 0;
+}
+input.email::placeholder {
+    color: white;
+}
+input.email:focus {
+    outline: none;
+}
+hr.footer {
+    margin: 0 5vw;
+}
+div.copyright{
+    float: left;
+    width:100%;
+    padding-top: 10vh;
+}
+p.copyright {
+    color: #CCAAA6;
+    text-align: left;
+    float: left;
+    width: 40%;
+}
+a.credits {
+    font-family: Montserrat;
+    text-decoration: none;
+    color: #CCAAA6;
+    text-align: right;
+    float: right;
+    width: 40%;
+}
 /*Responsive*/
+@media only screen and (max-width:1000px) {
+    img.footerlogo {
+        width:100%;
+        display: block;
+        margin: auto;
+    }
+    .col1 {
+        width: 100%;
+    }
+    .col2 {
+        width: 30%;
+    }
+}
 @media only screen and (max-width:800px) {
   /* For tablets: */
     .about {
@@ -279,5 +394,12 @@ div.num, div.label{
     }
     .btn{
         min-width: 100px;
-    }    
+    }  
+    
+    .col2 {
+        width: 100%;
+    }
+    .col3 {
+        width: 100%;
+    }
 }
