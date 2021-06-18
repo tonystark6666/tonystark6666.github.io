@@ -137,10 +137,16 @@ p.about {
     width:100%;
     border: transparent solid;
 }
-.btn:focus, .btn:hover,.btn.active {
+.btn:hover {
     color:#CC6666;
     background-color: white;
     border:#CC6666 solid;
+}
+.btn:focus {
+    outline:none;
+}
+.btn:active {
+    
 }
 .btn-container{
     max-width: 100%;
@@ -395,9 +401,14 @@ a.credits {
     .btn{
         min-width: 100px;
     }  
-    
+    .btn-container {
+        padding: 0 20vw;
+    }
     .col2 {
         width: 100%;
+    }
+    p.footer, a.footer {
+        display: block;
     }
     .col3 {
         width: 100%;
