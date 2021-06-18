@@ -6,7 +6,7 @@ function slideIn(ID) {
     var opacity = 0;
     elem.style.position = "relative";
     clearInterval(id);
-    id = setInterval(frame, 20);
+    id = setInterval(frame, 15);
     
     function frame() {
         if (pos == 0) {
@@ -16,7 +16,7 @@ function slideIn(ID) {
             pos++;
             opacity++;
             elem.style.top = pos + 'px';
-            elem.style.opacity = Math.sqrt(opacity/50);
+            elem.style.opacity = Math.sqrt(opacity/75);
         }
     }
 }
@@ -34,20 +34,29 @@ function animateValue(obj, start, end, duration) {
     };
     window.requestAnimationFrame(step);
 }
-
 var animated,aboutA,servicesA = false;
 window.addEventListener("scroll", function() {
     //Scroll into view
-    var home = document.getElementById("home");
-    var about = document.getElementById("about");
+    var home = document.getElementById("top");
+    var about = document.getElementById("aboutslide");
     var services = document.getElementById("services");
-    //About section
     if(window.scrollY > about.offsetTop - screen.height && !aboutA) {
+        if(home.style.top !=0) {
+            home.style.top = 0;
+            home.style.opacity = 1;
+        }
         slideIn("aboutslide");
         aboutA=true;
     }
-    //Services Section
-    if(window.scrollY > services.offsetTop - screen.height && !servicesA) {
+    if(window.scrollY > services.offsetTop - screen.height +100 && !servicesA) {
+        if(home.style.top !=0) {
+            home.style.top = 0;
+            home.style.opacity = 1;
+        }
+        if(about.style.top !=0) {
+            about.style.top = 0;
+            about.style.opacity = 1;
+        }
         slideIn("servicesslide");
         servicesA=true;
     }
