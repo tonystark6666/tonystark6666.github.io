@@ -2,7 +2,7 @@
 var id = null;
 function slideIn(ID) {
     var elem = document.getElementById(ID);
-    var pos = -75;
+    var pos = 75;
     var opacity = 0;
     elem.style.position = "relative";
     clearInterval(id);
@@ -13,7 +13,7 @@ function slideIn(ID) {
             clearInterval(id);
             opacity = 0;
         } else {
-            pos++;
+            pos--;
             opacity++;
             elem.style.top = pos + 'px';
             elem.style.opacity = Math.sqrt(opacity/75);
