@@ -90,7 +90,7 @@ window.addEventListener("scroll", function() {
         const obj2 = document.getElementById("value2");
         const obj3 = document.getElementById("value3");
         animateValueDecimal(obj, 4.00, 4.88, 2000.0);
-        animateValue(obj2, 700, 800, 2000);
+        animateValue(obj2, 1440, 1540, 2000);
         animateValue(obj3, 1, 7, 2000);
         animated = true;
     }
